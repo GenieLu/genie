@@ -446,7 +446,8 @@ textarea {
 }
 
 .transform-link {
-    font-weight: 700
+    font-weight: 700;
+    margin-top: 30px;
 }
 
 .transform-link::after {
@@ -505,7 +506,7 @@ input[type="button"]:focus {
 
 .blurb--framed {
     padding: 15px 0;
-    background-color: #3e3e3e;
+    background-color: #2b2b2b;
 }
 
 .blurb__heading {
@@ -910,6 +911,29 @@ input[type="button"]:focus {
     animation: scrollDown 1.6s infinite
 }
 
+#detial h4{
+	font-size: 22px;
+	color: #ff9d6c;
+	margin-bottom: 10px;
+}
+
+#detial p, #detial a{
+	font-size: 16px;
+    text-align: left;
+    color: #e2e2e2;
+}
+
+#detial a{
+	text-decoration: underline;
+}
+
+#detial h5{
+    font-size: 18px;
+    color: #ff9d6c;
+    margin-top: 5px;
+    margin-bottom: -5px;
+}
+
 @media (min-width: 1440px) {
     .introduction::before {
         font-size: 576px
@@ -930,7 +954,11 @@ input[type="button"]:focus {
     position: relative;
     width: 100%;
     height: 625px;
-    background-color: #3e3e3e;
+    background-color: #2b2b2b;
+}
+
+#about-me .about {
+    height: auto;
 }
 
 .about__wrapper {
@@ -960,9 +988,13 @@ input[type="button"]:focus {
 
 .about__visual {
     position: absolute;
-    left: 45px;
-    bottom: 0;
-    z-index: 2
+    left: -66px;
+    bottom: 90px;
+    z-index: 2;
+    width: 600px;
+    -webkit-box-shadow: 13px 14px 29px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 13px 14px 29px -8px rgba(0,0,0,0.75);
+	box-shadow: 13px 14px 29px -8px rgba(0,0,0,0.75);
 }
 
 .about__content {
@@ -1051,7 +1083,8 @@ input[type="button"]:focus {
         height: 540px
     }
     .about__visual {
-        width: 335px
+        width: 335px;
+        bottom: 74px;
     }
     .about__content-blurb h2 {
         font-size: 32px
@@ -1085,7 +1118,7 @@ input[type="button"]:focus {
     width: 828px;
     height: 581px;
     margin: 0;
-    background-image: url("../img/app-design-visual.png");
+    background-image: url("../img/app-design-visual02.png");
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat
@@ -1141,7 +1174,7 @@ input[type="button"]:focus {
     position: relative;
     width: 100%;
     padding: 200px 0;
-    background-color: #3e3e3e;
+    background-color: #2b2b2b;
     overflow: hidden
 }
 
@@ -1165,7 +1198,7 @@ input[type="button"]:focus {
     width: 828px;
     height: 581px;
     margin: 0;
-    background-image: url("../img/graphic-design-visual.png");
+    background-image: url("../img/graphic-design-visual02.png");
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat
@@ -1175,6 +1208,7 @@ input[type="button"]:focus {
     margin-right: 50px;
     padding-top: 60px;
     font-family: '蘭亭黑','微軟正黑體';
+    color: #d0d0d0;
 }
 
 #about-me .about__content-blurb.blurb.blurb--framed h3{
@@ -1372,7 +1406,7 @@ div.tab button {
     padding: 14px 16px;
     transition: 0.3s;
     width: 33.33333%;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
     border-radius: 0;
     background-color: #3e3e3e;
 }
@@ -1395,7 +1429,13 @@ div.tab button.active {
 }
 
 #portfolio{
-    background-color: #3e3e3e;
+    background-color: #2e2e2e;
+}
+
+#about-me .about__content-blurb >p img {
+    width: 40px;
+    height: 40px;
+    padding: 5px 5px;
 }
 
 @media (max-width: 991px) {
@@ -1571,6 +1611,7 @@ div.tab button.active {
 .blog__view-more--el {
     padding: 8px 30px
 }
+
 
 @media (max-width: 991px) {
     .blog__heading {
@@ -1777,8 +1818,9 @@ div.tab button.active {
 .footer {
     position: relative;
     width: 100%;
-    height: 100px
+    height: 100px;
     box-shadow: -6px -2px 3px rgb(33, 33, 37);
+    background-color: #191919;
 }
 
 .footer__wrapper {
